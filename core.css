@@ -88,6 +88,34 @@
     background-color: var(--primary2-colour);
 }
 
+/* === УБРАТЬ ФОН ЗА НИКОМ === */
+#app-mount .headerTop-3GPUSF,
+#app-mount .headerText-1vVs-U,
+#app-mount .username__0a06e,
+#app-mount .nameAndDecorators-2A8Bbk,
+#app-mount .headerTagUsernameNoNickname-1r7z0J,
+#app-mount .nickname-1wVd9D {
+    background: transparent !important;
+}
+
+/* плашка профиля (hover по нику / user popup) */
+#app-mount .userPopout-3XzG_A,
+#app-mount .userProfileOuterThemed-2GjYh3,
+#app-mount .userProfileInnerThemedNonPremium-1gT-zY {
+    background: transparent !important;
+}
+
+/* карточка пользователя в чате */
+#app-mount .container-2xlbes,
+#app-mount .headerText-2Jk5XU {
+    background: transparent !important;
+}
+
+/* убирает серый hover фон на нике */
+#app-mount .clickableUsername-1gZbQw:hover {
+    background: transparent !important;
+}
+
 /* === СКРОЛЛ === */
 #app-mount ::-webkit-scrollbar-thumb {
     background-color: var(--primary2-colour);
