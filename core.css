@@ -1,123 +1,36 @@
-:root{
-    --background: url('https://i.ibb.co/PXZVtwK/orig.gif');
-    --activetext-colour: white;
-
-    /* основной стиль — тёмный */
-    --primary1-colour: #5865F2; /* discord blurple */
-    --primary2-colour: rgba(88, 101, 242, 0.4);
-    --primary3-colour: rgba(0, 0, 0, 0.85);
-    --primary4-colour: rgba(0, 0, 0, 0.6);
-
-    --secondary1-colour: rgba(0, 0, 0, 0.4);
-    --secondary2-colour: rgba(0, 0, 0, 0.6);
-    --secondary3-colour: rgba(0, 0, 0, 0.9);
-    --secondary4-colour: rgba(0, 0, 0, 0.5);
-}
-
-/* === ФОН === */
-#app-mount {
-    background: var(--background);
-    background-position: center;
-    background-size: cover;
-}
-
-/* затемнение */
-#app-mount::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.75);
-    pointer-events: none;
-    z-index: 0;
-}
-
-/* === ОСНОВА === */
-#app-mount .app__160d8,
-#app-mount .bg__960e4 {
-    background-color: transparent;
-}
-
-/* === САЙДБАР === */
-#app-mount .sidebar__5e434 {
-    background-color: var(--secondary3-colour);
-    backdrop-filter: blur(8px);
-}
-
-/* === КАНАЛЫ === */
-#app-mount .containerDefault_c69b6d .wrapper__2ea32 {
-    background-color: var(--secondary1-colour);
-    border-radius: 10px;
-    transition: 0.2s;
-}
-
-#app-mount .containerDefault_c69b6d .wrapper__2ea32:hover {
-    background-color: var(--secondary2-colour);
-}
-
-/* === ЧАТ === */
-#app-mount .chat_f75fb0,
-#app-mount .chatContent_f75fb0 {
-    background-color: transparent;
-}
-
-/* сообщения */
-#app-mount .message__5126c .contents_c19a55 {
-    background-color: var(--secondary1-colour);
-    border-radius: 10px;
-    padding: 6px;
-}
-
-/* hover */
-#app-mount .message__5126c:hover .contents_c19a55 {
-    background-color: var(--secondary2-colour);
-}
-
-/* === ПОЛЕ ВВОДА === */
-#app-mount .scrollableContainer__74017 {
-    background-color: var(--secondary3-colour);
-    border-radius: 10px;
-}
-
-/* === КНОПКИ === */
-#app-mount .lookFilled__201d5 {
-    background-color: var(--primary1-colour);
-    color: var(--activetext-colour);
-}
-
-#app-mount .lookFilled__201d5:hover {
-    background-color: var(--primary2-colour);
-}
-
-/* === УБРАТЬ ФОН ЗА НИКОМ === */
-#app-mount .headerTop-3GPUSF,
-#app-mount .headerText-1vVs-U,
 #app-mount .username__0a06e,
-#app-mount .nameAndDecorators-2A8Bbk,
+#app-mount .username-h_Y3Us,
+#app-mount .headerText-2Jk5XU,
 #app-mount .headerTagUsernameNoNickname-1r7z0J,
 #app-mount .nickname-1wVd9D {
     background: transparent !important;
+    box-shadow: none !important;
 }
 
-/* плашка профиля (hover по нику / user popup) */
+#app-mount .clickableUsername-1gZbQw:hover,
+#app-mount .username__0a06e:hover {
+    background: transparent !important;
+}
+
+#app-mount .contents_c19a55,
+#app-mount .message__5126c,
+#app-mount .message__5126c:hover .contents_c19a55 {
+    background: transparent !important;
+}
+
 #app-mount .userPopout-3XzG_A,
 #app-mount .userProfileOuterThemed-2GjYh3,
-#app-mount .userProfileInnerThemedNonPremium-1gT-zY {
+#app-mount .userProfileInnerThemedNonPremium-1gT-zY,
+#app-mount .userPopoutInner-1aPO3r {
+    background: rgba(0,0,0,0.35) !important;
+    backdrop-filter: blur(10px);
+}
+
+#app-mount .bannerSVGWrapper-2CLfzN,
+#app-mount .profileBannerPremium-1l3VHI {
     background: transparent !important;
 }
 
-/* карточка пользователя в чате */
-#app-mount .container-2xlbes,
-#app-mount .headerText-2Jk5XU {
-    background: transparent !important;
-}
-
-/* убирает серый hover фон на нике */
-#app-mount .clickableUsername-1gZbQw:hover {
-    background: transparent !important;
-}
-
-/* === СКРОЛЛ === */
-#app-mount ::-webkit-scrollbar-thumb {
-    background-color: var(--primary2-colour);
-    border-radius: 10px;
+#app-mount code {
+    background: rgba(0,0,0,0.25) !important;
 }
